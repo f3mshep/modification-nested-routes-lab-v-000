@@ -1,7 +1,8 @@
 module ArtistsHelper
 
   def artist_select(dummy_arg1 = nil, dummy_arg2 = nil)
-    #dummy args are to make test pass
+    #dummy args are to make test pass. I like this question because of how many different ways there are to solve it, but I don't like how it 
+    #narrows the path you take.
     if params[:artist_id]
       Artist.find(params[:artist_id]).name
     else
